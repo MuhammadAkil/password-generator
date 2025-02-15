@@ -38,13 +38,13 @@ const PasswordGenerator: React.FC = () => {
 
 	return (
 		<div style={styles.container}>
-			<Title level={3} style={{ color: "white", textAlign: "center" }}>
+			<Title level={3} style={{ color: "white", marginBottom: "20px", textAlign: "center" }}>
 				<LockOutlined /> Password Generator
 			</Title>
 
 			<Space.Compact style={{ width: "100%" }}>
 				<Input ref={inputRef as any} value={password} readOnly placeholder="Generated Password" style={styles.input} />
-				<Button type="primary" icon={<CopyOutlined />} onClick={copyToClipboard}>
+				<Button style={{ paddingBlock: "20px" }} type="primary" icon={<CopyOutlined />} onClick={copyToClipboard}>
 					Copy
 				</Button>
 			</Space.Compact>
